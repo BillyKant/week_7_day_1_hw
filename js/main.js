@@ -69,7 +69,7 @@ console.log(replaceEvens(arr))
 function multiply(a, b){
     let answer = a * b;
     return answer;
-    }
+}
 
 /**
  * Even or Odd
@@ -81,5 +81,36 @@ function even_or_odd(number) {
         return "Even"
     } else {
         return "Odd"
+    };
+}
+
+/**
+ * Opposite Number
+ * Very simple, given an integer or a floating-point number, find its opposite.
+ */
+
+function opposite(number) {
+    return number * -1
+}
+
+/**
+ * Convert Number to a String!
+ * We need a function that can transform a number into a string.
+
+What ways of achieving this do you know?
+ */
+function numberToString(num) {
+    return num.toString()
+}
+
+/**
+ * Convert boolean values to strings 'Yes' or 'No'.
+ * Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+ */
+function boolToWord( bool ){
+    if (bool == true){
+        return 'Yes'
+    } else {
+        return 'No'
     };
 }
