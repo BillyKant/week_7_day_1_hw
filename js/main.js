@@ -53,3 +53,33 @@ console.log(replaceEvens(arr))
 //Expected output
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+/**
+ *    CODE WARS
+ */
+
+/**
+ * Multiply
+ * This code does not execute properly. Try to figure out why.
+ * function multiply(a, b){
+ *    a * b
+ *   }
+ */
+
+function multiply(a, b){
+    let answer = a * b;
+    return answer;
+    }
+
+/**
+ * Even or Odd
+ * Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+ */
+
+function even_or_odd(number) {
+    if (number % 2 == 0){
+        return "Even"
+    } else {
+        return "Odd"
+    };
+}
