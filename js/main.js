@@ -114,3 +114,56 @@ function boolToWord( bool ){
         return 'No'
     };
 }
+
+/**
+ * Reversed Strings
+ * Complete the solution so that it reverses the string passed into it.
+ */
+function solution(str){
+    let split = str.split('');
+    let rev = split.reverse();
+    return rev.join('');
+}
+
+/**
+ * Remove First and Last Character
+ * It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+ */
+function removeChar(str){
+    let len = str.length;
+    return str.slice(1,len-1);
+};
+
+/**
+ * Remove String Spaces
+ */
+function noSpace(x){
+    return x.replace(/ /g,"");
+}
+
+/**
+ * Grasshopper - Summation
+ * Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+ */
+var summation = function (num) {
+    let sum = 0;
+    for (let i = 0; i <= num; i++){
+        sum += i
+    };
+    return sum
+}
+
+/**
+ * Counting sheep...
+ * Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).[true,false,true,true,true,false]
+ */
+function countSheeps(arrayOfSheep) {
+    let len = arrayOfSheep.length
+    let count = 0;
+    for (let i =0; i <=len; i++){
+        if (arrayOfSheep[i] == true) {
+        count += 1
+        }
+    }
+    return count
+}
